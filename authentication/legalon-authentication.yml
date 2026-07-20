@@ -1,0 +1,31 @@
+generated: '2026-07-19'
+method: searched
+source: https://legalontech.jp/10843/
+docs: https://legalontech.jp/10843/
+note: LegalOn publishes no open API reference. The authentication model below is taken
+  verbatim from LegalOn's own public API announcement; token and authorization
+  endpoint URLs are not published on the open web and are therefore not recorded here.
+summary:
+  types:
+  - oauth2
+  oauth2_flows:
+  - clientCredentials
+  api_key_in: []
+schemes:
+- name: OAuth2ClientCredentials
+  type: oauth2
+  flow: clientCredentials
+  authorizationUrl: null
+  tokenUrl: null
+  scopes: []
+  scopes_published: false
+  source: https://legalontech.jp/10843/
+authorization:
+  model: workspace-scoped role-based access
+  description: API access is restricted to workspaces in which the authenticating
+    principal holds an appropriate role, as stated in the LegalOn API announcement.
+gaps:
+- No public authentication documentation page.
+- Token endpoint, authorization server metadata, and scope names are not published.
+- No /.well-known/oauth-authorization-server or /.well-known/openid-configuration
+  document was found on any LegalOn host (see well-known/legalon-well-known.yml).
