@@ -1,23 +1,86 @@
 aid: legalon
 name: LegalOn
-description: 'LegalOn is a company surfaced as a portfolio company of hongshan, softbank-vision-fund and
-  added to the API Evangelist network as a stub for enrichment. Sector: technology. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: 'LegalOn Technologies is a legal-technology company building AI software for in-house legal
+  teams, corporate legal operations, and law firms. Its platform covers AI contract review and redlining,
+  contract playbooks, matter management, a contract data vault, translation, entity and board management,
+  and agentic legal workflows, with a Microsoft Word integration for reviewing agreements in place. Founded
+  in Japan as LegalForce and now operating in both Japan (legalontech.jp) and the United States
+  (legalontech.com), the company runs a sibling product family for governance (GovernOn), sales (DealOn),
+  HR (WorkOn), and marketing compliance (DocumentOn). LegalOn publishes a REST API for contract files and
+  contract metadata — upload, retrieve, update and delete contract documents, register and update contract
+  information such as counterparties and contract types, link related documents, and list registered
+  contracts — authenticated with OAuth 2.0 client credentials, intended for integration with contract
+  management systems, CRM, and BI tooling. The API is announced publicly but its reference documentation
+  is not published on the open web; access is arranged through the vendor. The company is backed by
+  Hongshan and the SoftBank Vision Fund, and publishes SOC 2 Type II, ISO/IEC 27001:2022 and ISO/IEC
+  27017:2015 certifications through a public trust center.'
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/68c03413336317ed3e6c0cb5/68f4566ea04559817c98ad87_LegalOn_OG%201.png
 url: https://raw.githubusercontent.com/api-evangelist/legalon/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - hongshan
 - softbank-vision-fund
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: enrichment-pipeline
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Technology
-apis: []
+- Legal
+- Legal Technology
+- Contracts
+- Contract Management
+- Contract Lifecycle Management
+- Artificial Intelligence
+- Document Management
+- Compliance
+- Governance
+- SaaS
+- Japan
+apis:
+- aid: legalon:contract-api
+  name: LegalOn Contract API
+  description: 'REST API for the LegalOn contract platform. Documented capabilities cover contract file
+    operations (upload, retrieve, update, delete), contract information management (register and update
+    metadata such as counterparty name and contract type), linking related documents to a contract, and
+    retrieving lists and details of registered contracts. Authentication is OAuth 2.0 using the
+    client_credentials grant, scoped to workspaces where the caller holds the appropriate role. Announced
+    publicly on 2026-07-13 as the second phase of LegalOn API connectivity; the API reference is not
+    published on the open web.'
+  humanURL: https://legalontech.jp/10843/
+  baseURL: https://api.legalontech.com
+  x-baseurl-confidence: probed-host-unconfirmed-by-docs
+  tags:
+  - Contracts
+  - Contract Management
+  - Documents
+  - Legal
+  properties:
+  - type: Authentication
+    url: authentication/legalon-authentication.yml
+  - type: Conventions
+    url: conventions/legalon-conventions.yml
+  - type: Announcement
+    name: LegalOn contract file and information API (phase 2)
+    url: https://legalontech.jp/10843/
+  - type: Announcement
+    name: LegalOn API connectivity (phase 1)
+    url: https://legalontech.jp/10478/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,4 +88,61 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://www.legalontech.com/
+- type: Website
+  name: LegalOn Technologies (Japan)
   url: https://legalontech.jp
+- type: Blog
+  url: https://www.legalontech.com/blog
+- type: Pricing
+  url: https://www.legalontech.com/pricing
+- type: Login
+  url: https://app.legalontech.com/
+- type: TermsOfService
+  url: https://www.legalontech.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.legalontech.com/terms-and-conditions#Privacy-Policy
+- type: Security
+  url: https://www.legalontech.com/security
+- type: TrustCenter
+  url: https://trust.legalontech.com/
+- type: Compliance
+  url: https://trust.legalontech.com/
+- type: StatusPage
+  url: https://status.legalontech.com/
+- type: ChangeLog
+  url: https://www.legalontech.com/new-at-legalon
+- type: Support
+  name: Contact LegalOn Technologies
+  url: https://legalontech.jp/contact
+- type: Press
+  url: https://www.legalontech.com/newsroom
+- type: Careers
+  url: https://www.legalontech.com/careers
+- type: CaseStudies
+  url: https://www.legalontech.com/customers
+- type: Authentication
+  url: authentication/legalon-authentication.yml
+- type: Conventions
+  url: conventions/legalon-conventions.yml
+- type: Conformance
+  url: conformance/legalon-conformance.yml
+- type: Lifecycle
+  url: lifecycle/legalon-lifecycle.yml
+- type: ChangeLog
+  name: LegalOn changelog artifact
+  url: changelog/legalon-changelog.yml
+- type: TrustCenter
+  name: LegalOn trust center artifact
+  url: security/legalon-trust-center.yml
+- type: DomainSecurity
+  url: security/legalon-domain-security.yml
+- type: WellKnown
+  url: well-known/legalon-well-known.yml
+- type: LLMsTxt
+  url: llms/legalon-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
