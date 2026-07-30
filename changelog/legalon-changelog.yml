@@ -1,0 +1,45 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.legalontech.com/new-at-legalon
+url: https://www.legalontech.com/new-at-legalon
+scheme: date-based
+current_version: null
+note: LegalOn publishes a dated product changelog ("What's New in LegalOn"). It is a
+  product release log, not an API changelog — entries are not versioned and do not
+  flag breaking API changes. Recent window only.
+entries:
+- date: '2026-07-08'
+  breaking: false
+  highlights:
+  - One-click prompt improvement in Assistant, rewriting prompts into more precise
+    versions without manual prompt engineering
+  - Attach files to prompts
+- date: '2026-06-24'
+  breaking: false
+  highlights:
+  - Share Assistant conversations across the whole team
+- date: '2026-06-11'
+  breaking: false
+  highlights:
+  - Real-time reasoning display, showing step-by-step processing while working
+    through contracts
+  - Company Intelligence
+- date: '2026-04-29'
+  breaking: false
+  highlights:
+  - LegalOn Vault launch, turning executed agreements into structured, searchable
+    business data
+- date: '2026-04-07'
+  breaking: false
+  highlights:
+  - Spring 2026 release, Word integration enhancements, inline citations, multi-file
+    uploads
+api_announcements:
+- date: '2026-07-13'
+  url: https://legalontech.jp/10843/
+  summary: Contract file and contract information API (phase 2) — register, update
+    and retrieve contracts and related documents from external systems; OAuth 2.0
+    client_credentials.
+- date: '2026-02'
+  url: https://legalontech.jp/10478/
+  summary: First phase of LegalOn API connectivity.

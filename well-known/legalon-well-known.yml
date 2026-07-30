@@ -1,0 +1,50 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of /.well-known/* on LegalOn hosts
+summary: No .well-known discovery documents are published on any LegalOn host. The
+  api.legalontech.com edge returns 403 to all unauthenticated requests, including
+  /.well-known/* paths, so absence there is not distinguishable from denial.
+hosts:
+- host: https://www.legalontech.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://legalontech.jp
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://api.legalontech.com
+  note: all paths return 403 from the edge; host exists but is not publicly readable
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
+  - path: /.well-known/ai-plugin.json
+    status: 403
+  - path: /llms.txt
+    status: 403

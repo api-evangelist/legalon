@@ -1,0 +1,56 @@
+generated: '2026-07-19'
+method: searched
+source: https://legalontech.jp/10843/
+note: LegalOn does not publish an open API reference, so most cross-cutting semantics
+  below are unknown rather than absent. Only what LegalOn states publicly is recorded.
+  Re-run this artifact if a public API reference is published.
+style: REST over HTTPS
+authentication:
+  style: oauth2 client_credentials bearer token
+  scope: workspace-scoped, role-gated
+  artifact: authentication/legalon-authentication.yml
+resources:
+- name: contract files
+  operations_documented:
+  - upload a contract file
+  - retrieve a contract file
+  - update a contract file
+  - delete a contract file
+- name: contract information
+  operations_documented:
+  - register contract metadata (counterparty name, contract type, and similar fields)
+  - update contract metadata
+  - retrieve contract details
+  - list registered contracts
+- name: related documents
+  operations_documented:
+  - upload a related document
+  - associate a related document with a contract
+idempotency:
+  supported: unknown
+  note: No idempotency key header or retry contract is documented publicly. No
+    Idempotency pointer is emitted in apis.yml because idempotency support is
+    unverified.
+pagination:
+  style: unknown
+  note: A contract list operation is documented, but its pagination parameters and
+    response envelope are not published.
+versioning:
+  scheme: unknown
+  note: No public API version identifier or version policy. The product changelog is
+    date-based (see changelog/legalon-changelog.yml).
+errors:
+  envelope: unknown
+  rfc9457: unknown
+rate_limits:
+  documented: false
+request_tracing:
+  request_id_header: unknown
+integration_targets:
+- contract management systems
+- CRM
+- BI and analytics tooling
+cross_references:
+  authentication: authentication/legalon-authentication.yml
+  lifecycle: lifecycle/legalon-lifecycle.yml
+  conformance: conformance/legalon-conformance.yml

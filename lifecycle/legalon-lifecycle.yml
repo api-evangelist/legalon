@@ -1,0 +1,24 @@
+generated: '2026-07-19'
+method: searched
+source: https://status.legalontech.com/
+versioning:
+  scheme: unknown
+  current: null
+  docs: null
+  note: No public API version identifier or versioning policy. Product releases are
+    communicated by date on the What's New page.
+deprecation:
+  policy_url: null
+  sunset_header: unknown
+  note: No published deprecation or sunset policy was found. No Deprecation pointer
+    is emitted in apis.yml.
+sla:
+  url: null
+  uptime_target: null
+status_page: https://status.legalontech.com/
+status_page_platform: Atlassian Statuspage
+status_feeds:
+- https://status.legalontech.com/history.atom
+- https://status.legalontech.com/history.rss
+changelog: https://www.legalontech.com/new-at-legalon
+deprecated_operations: []

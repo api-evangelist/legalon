@@ -1,0 +1,21 @@
+{
+  "repo": "legalon",
+  "feeds": [
+    {
+      "source": "https://legalontech.jp/feed/",
+      "feed_url": "https://legalontech.jp/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://legalontech.jp",
+      "feed_url": "https://legalontech.jp/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 9,
+  "fetched": "2026-07-25T15:00:33Z"
+}

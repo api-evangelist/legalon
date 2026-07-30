@@ -1,0 +1,47 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.legalontech.com/security
+note: No OpenAPI is published for the LegalOn API, so protocol conformance below is
+  asserted only where LegalOn states it publicly. Unstated standards are recorded as
+  unknown rather than false where absence could not be verified.
+standards:
+- id: oauth2
+  conforms: true
+  evidence: 'LegalOn API announcement states authentication is OAuth 2.0 (client_credentials):
+    https://legalontech.jp/10843/'
+- id: oauth2-client-credentials-rfc6749
+  conforms: true
+  evidence: client_credentials grant named explicitly in the API announcement
+- id: rfc8414-oauth-authorization-server-metadata
+  conforms: false
+  evidence: /.well-known/oauth-authorization-server returns 404 on public hosts
+- id: openid-connect
+  conforms: false
+  evidence: /.well-known/openid-configuration returns 404 on public hosts
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: /.well-known/security.txt returns 404 on www.legalontech.com and legalontech.jp
+- id: rfc9457-problem-details
+  conforms: unknown
+  evidence: no public API reference or error documentation
+- id: hsts
+  conforms: true
+  evidence: 'www.legalontech.com sends Strict-Transport-Security max-age=31536000;
+    see security/legalon-domain-security.yml'
+compliance_programs:
+- id: soc2-type-ii
+  published: true
+  evidence: https://www.legalontech.com/security
+- id: iso-27001-2022
+  published: true
+  evidence: https://www.legalontech.com/security
+- id: iso-27017-2015
+  published: true
+  evidence: https://www.legalontech.com/security
+- id: gdpr
+  published: true
+  evidence: https://www.legalontech.com/security
+- id: ccpa
+  published: true
+  evidence: https://www.legalontech.com/security
+trust_center: https://trust.legalontech.com/
