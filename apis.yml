@@ -14,6 +14,17 @@ description: 'LegalOn Technologies is a legal-technology company building AI sof
   is not published on the open web; access is arranged through the vendor. The company is backed by
   Hongshan and the SoftBank Vision Fund, and publishes SOC 2 Type II, ISO/IEC 27001:2022 and ISO/IEC
   27017:2015 certifications through a public trust center.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
