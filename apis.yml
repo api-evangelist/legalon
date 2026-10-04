@@ -53,12 +53,12 @@ tags:
 - Company
 - Technology
 - Legal
-- Legal Technology
+- Legal Tech
 - Contracts
 - Contract Management
 - Contract Lifecycle Management
 - Artificial Intelligence
-- Document-Management
+- Document Management
 - Compliance
 - Governance
 - Software-as-a-Service
@@ -77,6 +77,7 @@ tags_raw:
 - Governance
 - SaaS
 - Japan
+- Document-Management
 apis:
 - aid: legalon:contract-api
   name: LegalOn Contract API
