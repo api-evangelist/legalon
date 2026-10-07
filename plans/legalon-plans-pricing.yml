@@ -1,0 +1,36 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www.legalontech.com/pricing
+sources:
+- https://www.legalontech.com/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: negotiated
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: false
+note: Three named tiers with no numeric prices; all CTAs are 'Book a Demo'. FAQ states pricing is based
+  on team size and capabilities via quote. Percentages on page are outcome stats, not prices.
+plan_count: 3
+plans:
+- name: Core Review
+  price_text: Book a Demo
+  period: none
+  included_quota: Unlimited chat with Legal AI Assistant, unlimited AI contract review and redlining,
+    135+ pre-built playbooks, unlimited document repository, 100+ templates, Word add-in
+- name: Contracting Suite
+  price_text: Book a Demo
+  period: none
+  included_quota: Core Review plus My Playbooks, Playbook Agent, Vault Repository, Vault Projects, training,
+    dedicated support, SSO/MFA/IP whitelisting
+- name: Productivity Suite
+  price_text: Book a Demo
+  period: none
+  included_quota: Contracting Suite plus Matter Management, Intake Agent, Triage Agent, Matter Dashboard,
+    Matter Intelligence, intake from email/forms/Slack/Teams
