@@ -34,3 +34,30 @@ plans:
   period: none
   included_quota: Contracting Suite plus Matter Management, Intake Agent, Triage Agent, Matter Dashboard,
     Matter Intelligence, intake from email/forms/Slack/Teams
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models: []
+  units: []
+  plans:
+  - name: Core Review
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
+  - name: Contracting Suite
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
+  - name: Productivity Suite
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
